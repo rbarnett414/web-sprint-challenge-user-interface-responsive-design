@@ -6,48 +6,49 @@
 	<meta charset="utf-8">
 
 	<title>Sprint Challenge - Home</title>
-
+	<link rel="stylesheet" href="css/index.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 	<div>
-		<!-- header -->
-		<header>
-			<div>
-				BLOOMTECH BAR AND GRILL
-
-				<!-- nav -->
-				Menu
-				Reservations
-				Special Offers
-				Contact
-			</div>
-		</header>
-
+	<!-- header -->
+	<header>
+		<div class="top">
+			<a href="/index.html"><h1>BLOOMTECH BAR AND GRILL</h1></a>
+			<nav>
+				<div class="links">
+					<a href="/menu.html">Menu</a>
+					<a href="#reservations">Reservations</a>
+					<a href="#specials">Special Offers</a>
+					<a href="#contact">Contact</a>
+				</div>
+				<div class="social">	
+					<a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+					<a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+					<a href="www.instagram.com"><i class="fa fa-instagram"></i></a>
+				</div>
+			</nav>
+			
+		</div>
+	</header>
 		<!-- gallery section -->
 		<section class="gallery">
-			<div>
-				<h2>OUR FOOD</h2>
-
-				img/food-avocadotoast.jpg
-
-				img/food-burger.jpg
-
-				img/food-poutine.jpg
-
-				img/food-ribs.jpg
-
-				img/food-sandwich.jpg
-
-				img/food-sausage.jpg
-
-				img/food-steak.jpg
-
-				img/food-tacos.jpg
-
-				img/food-wings.jpg
+			<h2>OUR FOOD</h2>
+				<div class="images">
+					<img src="img/food-avocadotoast.jpg" alt="avocado toast">
+					<img src="img/food-burger.jpg" alt="burger">
+					<img src="img/food-poutine.jpg" alt="poutine">
+					<img src="img/food-ribs.jpg" alt="ribs">
+					<img src="img/food-sandwich.jpg" alt="sandwich">
+					<img src="img/food-sausage.jpg" alt="sausage">
+					<img src="img/food-steak.jpg" alt="steak">
+					<img src="img/food-tacos.jpg" alt="tacos">
+					<img src="img/food-wings.jpg" alt="chicken wings">
+				
 			</div>
 		</section>
 
@@ -125,15 +126,26 @@
 		<!-- footer -->
 		<footer>
 			<!-- email signup -->
-			Join our mailing list!
-			Sign Up
+			<div class="left">
+				<label for="mail">Join our mailing list!</label>
+				<div class="signUp">
+					<input type="email" size="30" placeholder="Email Address">
+					<button>Sign Up</button>
+				</div>	
+			</div>
+			<div class="right">
 			<!-- nav -->
-			Menu
-			Reservations
-			Special Offers
-			Contact
+			<nav>
+				<div class="links">
+					<a href="/menu.html">Menu</a>
+					<a href="#reservations">Reservations</a>
+					<a href="#specials">Special Offers</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</nav>
 			<!-- copyright -->
-			©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.
+			<p>©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.</p>
+		</div>
 		</footer>
 	</div>
 </body>

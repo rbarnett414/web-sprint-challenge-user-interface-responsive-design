@@ -47,6 +47,8 @@ table {
 	border-spacing: 0;
 }
 
+/* General Styling */
+
 * {
     box-sizing: border-box;
 }
@@ -63,24 +65,28 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, i {
+h1, h2, h3, h4, h5, h6, p, a, i, label {
     text-decoration: none;
+    color: white;
 }
 
 h1 {
-    font-size: 7.5rem;
+    font-size: 6.5rem;
+    text-align: center;
+    white-space: nowrap;
 }
 
 h2 {
-    font-size: 6rem;
+    padding: 2%;
+    font-size: 5.5rem;
 }
 
 h3 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 p, a {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 /* header section */
@@ -93,6 +99,62 @@ header {
     background-repeat: no-repeat;
 }
 
+.top {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(0, 4, 17);
+}
+
+nav {
+    width: 100%;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+/* gallery section */
+.gallery {
+    width: 100%;
+    height: 110vh;
+    text-align: center;
+    background-color: rgb(0, 4, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.images {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+.images img {
+    padding: 1%;
+    width: 25vw;
+}
+  
 /* spacers */
 .spacer {
     width: 100%;
@@ -105,13 +167,6 @@ header {
     background-color: rgb(0, 4, 17);
 }
 
-/* gallery section */
-.gallery {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    background-color: rgb(0, 4, 17);
-}
 
 /* about us section */
 .about {
@@ -190,10 +245,54 @@ header {
 
 /* footer section */
 footer {
+    background-color: rgb(0, 4, 17);
     width: 100%;
-    height: 15vh;
+    height: 30vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.left {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUp {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    
+}
+
+
+.signUp input {
+    width: 55%;
+    line-height: 2;
+    font-size: 2rem;
+}
+
+.signUp button {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.right {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right p {
+    font-size: 2rem;
+    margin-top: 10%;
 }
 
 /* mobile media query */
@@ -246,8 +345,14 @@ footer {
 
     /* footer section */
     footer {
+        width: 100%;
+        background-color: rgb(0, 4, 17);
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        display: flex;
+        flex-flow: row nowrap;
     }
+
+    
 }
